@@ -7,6 +7,9 @@ It uses its own compiler, execution engine, memory model, and syntax system.
 
 JAPPL acts as a bridge between Scratch (easy), Python (clean), and Java (structured), allowing new programmers to write real text code with minimal frustration.
 
+the current prototype is implemented on top of scratch using it as a host virtual machine
+a standalonh html/js is planned
+
 🔥 Key Features
 ✔️ Syntax-tolerant
 
