@@ -10,6 +10,8 @@ JAPPL acts as a bridge between Scratch (easy), Python (clean), and Java (structu
 the current prototype is implemented on top of scratch using it as a host virtual machine
 a standalonh html/js is planned
 
+you are requested to help jappl grow by making a better version of jappl and share it on scratch if the update is good and found by the developer the new feature will 100% be implemented
+
 Key Features
 Syntax-tolerant
 
