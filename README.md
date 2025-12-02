@@ -10,24 +10,24 @@ JAPPL acts as a bridge between Scratch (easy), Python (clean), and Java (structu
 the current prototype is implemented on top of scratch using it as a host virtual machine
 a standalonh html/js is planned
 
-🔥 Key Features
-✔️ Syntax-tolerant
+Key Features
+Syntax-tolerant
 
 JAPPL accepts multiple variations of the same command and converts them into clean internal bytecode:
 
-   " >print hi "
-   " >print "hi" "
-   " >print=hi "
+   >print hi 
+   >print "hi" 
+   >print=hi 
 
 
 All normalize into:
 
-" >print "hi" "
+ >print "hi" 
 
 
 This makes JAPPL extremely easy for beginners and hard to break.
 
-✔️ Text-based language inside a VM
+ Text-based language inside a VM
 
 Even though JAPPL is implemented in Scratch, it is NOT a block-language.
 It has:
@@ -52,7 +52,7 @@ custom memory handling
 
 Scratch is used only as the host (like Python being hosted by C).
 
-✔️ Beginner-first design
+ Beginner-first design
 
 Built so new programmers can learn coding without syntax nightmares:
 
@@ -68,15 +68,16 @@ portable project file
 
 simple mental model
 
-✔️ Core Commands (examples)
+ Core Commands (examples)
 >print hello
 >wait 1
 >clear screen
 >make variable x
 >set variable x to 4
 >repeat infinite
+>repeat 10
 
-🚀 Current Version
+ Current Version
 
 JAPPL 4.0 (Stable branch under development)
 New features include:
@@ -95,7 +96,7 @@ stable compiler with zero known bugs
 
 syntax cleaner / auto-normalizer
 
-📜 Development Timeline (Short Summary)
+ Development Timeline (Short Summary)
 JAPPL 1 — Core Engine
 
 interpreter
@@ -178,7 +179,7 @@ All feedback and remixes are very very appreciated.
 The official JAPPL maintainers reserve final approval on what becomes part of JAPPL.
 contributions must be remixed from the main project (
 
-⚖️ License (Apache 2.0)
+ License (Apache 2.0)
 
 You are free to:
 
@@ -202,7 +203,7 @@ You may keep your remix closed-source.
 
 Full license text is in LICENSE.
 
-🔗 Official Links
+ Official Links
 JAPPL Scratch Project: https://scratch.mit.edu/projects/1084888676/
 
 JAPPL Discussion Thread and docuentation : https://scratch.mit.edu/discuss/topic/837372/
