@@ -1,4 +1,8 @@
 # JAPPL
+website: https://seancathancabral-bit.github.io/JAPPL/
+JAPPL Scratch Project: https://scratch.mit.edu/projects/1084888676/
+JAPPL Discussion Thread and docuentation : https://scratch.mit.edu/discuss/topic/837372/
+
 JAPPL is a programming language thats significantly under developed bc its just one guy
 JAPPL — A Syntax-Tolerant Text Programming Language
 
@@ -204,8 +208,3 @@ NOT claim your fork is the “official JAPPL”
 You may keep your remix closed-source.
 
 Full license text is in LICENSE.
-
- Official Links
-JAPPL Scratch Project: https://scratch.mit.edu/projects/1084888676/
-
-JAPPL Discussion Thread and docuentation : https://scratch.mit.edu/discuss/topic/837372/
