@@ -13,8 +13,34 @@
             background-color: #f9f9f9;
             color: #2c3e50;
             position: relative;
+            margin: 0;
         }
-        h1 { font-size: 2rem; color: #2c3e50; }
+        header { margin-bottom: 1.5rem; }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+
+        /* Navbar */
+        nav.site-nav {
+            background: #222;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1001;
+        }
+        nav.site-nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 6px 10px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        nav.site-nav a:hover { background: rgba(255,255,255,0.06); }
+        nav.site-nav a.active { background: #2980b9; }
+
+        h1 { font-size: 2rem; color: #2c3e50; margin: 0 0 0.5rem 0; }
         h2 { font-size: 1.5rem; margin-top: 2rem; }
         h3 { font-size: 1.2rem; margin-top: 1.5rem; }
         a { color: #2980b9; text-decoration: none; }
@@ -27,7 +53,7 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 1rem;
-            margin: 10px 10px 10px 0;
+            margin: 0;
         }
         button:hover { background-color: #3498db; }
         pre {
@@ -36,6 +62,15 @@
             border-radius: 5px;
             overflow-x: auto;
         }
+
+        /* Actions (buttons) */
+        .actions {
+            margin: 1rem 0 1.5rem 0;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
         /* Logo styling */
         .logo {
             position: fixed;
@@ -46,33 +81,63 @@
             height: auto;
             z-index: 1000;
         }
+
+        /* Footer small */
+        .links ul { padding-left: 1.1rem; }
+        .links li { margin: 6px 0; }
+
+        @media (max-width: 900px) {
+            .logo { display: none; }
+            .container { padding: 1rem; }
+            nav.site-nav { gap: 8px; padding: 8px 12px; }
+        }
     </style>
 </head>
 <body>
 
-    <img src="logo.svg" alt="Jappl Logo" class="logo">
+    <!-- Navbar -->
+    <nav class="site-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="docs.html">Documentation</a>
+      <a href="tutorial.html">Tutorial</a>
+      <a href="examples.html">Example Code</a>
+      <!-- spacer -->
+      <div style="flex:1"></div>
+      <a href="https://scratch.mit.edu/projects/1084888676/" target="_blank" rel="noopener">Open on Scratch</a>
+      <a href="https://github.com/ghostprogrammerz/jappl" target="_blank" rel="noopener">GitHub</a>
+    </nav>
 
-    <h1>Welcome to Jappl</h1>
-    <p>Jappl is an open-source programming language currently in development.</p>
+    <div class="container">
+      <img src="logo.svg" alt="Jappl Logo" class="logo">
 
-    <h2>How to Use</h2>
-    <ol>
-        <li>Open the project in your browser using the buttons below.</li>
-        <li>Try out the sample code.</li>
-        <li>Have fun coding!</li>
-    </ol>
+      <header>
+          <h1>Welcome to Jappl</h1>
+          <p>Jappl is an open-source programming language currently in development.</p>
+      </header>
 
-    <!-- Buttons -->
-    <a href="JAPPL 4.1.5.html">
-        <button>Open Jappl</button>
-    </a>
+      <section>
+        <h2>How to Use</h2>
+        <ol>
+            <li>Open the project in your browser using the buttons below.</li>
+            <li>Try out the sample code.</li>
+            <li>Have fun coding!</li>
+        </ol>
 
-    <a href="examples.html">
-        <button>Examples</button>
-    </a>
+        <!-- Buttons aligned properly -->
+        <div class="actions">
+            <a href="JAPPL 4.1.5.html">
+                <button type="button">Open Jappl</button>
+            </a>
 
-    <h3>Sample Code</h3>
-    <pre><code>
+            <a href="examples.html">
+                <button type="button">Examples</button>
+            </a>
+        </div>
+      </section>
+
+      <section>
+        <h3>Sample Code</h3>
+        <pre><code>
 >print hello!
 >wait 1
 >clear screen
@@ -81,13 +146,18 @@
 >wait 0.5
 >clear screen
 >print [ask]
-    </code></pre>
+        </code></pre>
+      </section>
 
-    <h2>Links</h2>
-    <ul>
-        <li><a href="https://scratch.mit.edu/projects/1084888676/" target="_blank">Main Project</a></li>
-        <li><a href="https://github.com/ghostprogrammerz/jappl" target="_blank">GitHub Repo</a></li>
-        <li><a href="https://github.com/ghostprogrammerz/jappl" target="_blank">Discussion & Documentation</a></li>
-    </ul>
+      <section class="links">
+        <h2>Links</h2>
+        <ul>
+            <li><a href="https://scratch.mit.edu/projects/1084888676/" target="_blank" rel="noopener">Main Project (Scratch)</a></li>
+            <li><a href="https://github.com/ghostprogrammerz/jappl" target="_blank" rel="noopener">GitHub Repo</a></li>
+            <li><a href="https://github.com/ghostprogrammerz/jappl" target="_blank" rel="noopener">Discussion & Documentation</a></li>
+        </ul>
+      </section>
+    </div>
+
 </body>
 </html>
